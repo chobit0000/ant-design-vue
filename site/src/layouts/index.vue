@@ -210,6 +210,7 @@ export default defineComponent({
       return {
         'main-container': true,
         'main-container-component': isDemo.value,
+        'esp-wrapper': true,
       };
     });
     const handleClickShowButton = () => {

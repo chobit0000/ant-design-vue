@@ -48,6 +48,9 @@ export default {
         modifyVars: {
           hack: `true;@import "${require.resolve('../components/style/color/colorPalette.less')}";`,
           'root-entry-name': 'variable',
+          'primary-color': '#ff880f',
+          'primary-color-outline': '#ff880f',
+          'font-size-base': '12px',
         },
         javascriptEnabled: true,
         // includePaths: ["node_modules/"],
