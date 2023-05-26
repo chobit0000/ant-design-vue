@@ -1,5 +1,10 @@
 @import './default.less';
+@hover-color: '#303133';
+
 .esp-wrapper {
+  .ant-input {
+    box-shadow: none;
+  }
   .ant-checkbox-wrapper {
     margin-right: 20px;
   }
@@ -14,14 +19,18 @@
     height: 8.8px;
   }
 
-  .ant-input {
+  .ant-input,
+  .ant-input-sm,
+  .ant-btn,
+  .ant-btn-sm {
     padding-left: 12px;
+    padding-right: 12px;
   }
-  .ant-input-sm {
-    padding-left: 12px;
-  }
-  .ant-input-lg {
+
+  .ant-input-lg,
+  .ant-btn-lg {
     padding-left: 16px;
+    padding-right: 16px;
   }
 
   // .ant-radio {
@@ -70,6 +79,16 @@
 .ant-dropdown-menu-submenu-title {
   padding: 3px 16px;
 }
-//   .ant-dropdown-menu-item:hover,.ant-dropdown-menu-submenu-title:hover{
-//     color:#303133
-//   }
+.ant-dropdown-menu-item:hover,
+.ant-dropdown-menu-submenu-title:hover {
+  color: @hover-color;
+}
+.ant-select-dropdown {
+  box-shadow: 0 2px 12px 0 #0000000f;
+  border: 1px solid #dcdfe6;
+}
+.ant-picker-cell-selected .ant-picker-cell-inner {
+  border: 1px solid @primary-color;
+  color: @primary-color!important;
+  background: #fff !important;
+}

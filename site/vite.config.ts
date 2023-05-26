@@ -46,16 +46,21 @@ export default {
     preprocessorOptions: {
       less: {
         modifyVars: {
-          // hack: `true;@import "${require.resolve('../components/style/color/colorPalette.less')}";`,
+          hack: `true;@import "${require.resolve('../components/style/color/colorPalette.less')}";`,
           'root-entry-name': 'variable',
           'primary-color': '#ff880f',
-          'primary-color-active': '#ff880f',
+          'base-primary': '#ff880f',
           'primary-5': '#909399',
           'height-base': '28px',
           'height-lg': '32px',
           'height-sm': '22px',
           'font-size-base': '12px',
           'item-hover-bg': '#F5F7FA',
+          'primary-1': '#F5F7FA',
+          'border-radius-base': '4px',
+          'btn-default-color': '@primary-color',
+          'btn-default-bg': '#fff',
+          '@btn-default-border': '@primary-color',
         },
         javascriptEnabled: true,
         // includePaths: ["node_modules/"],
