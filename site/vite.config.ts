@@ -60,7 +60,7 @@ export default {
           'border-radius-base': '4px',
           'btn-default-color': '@primary-color',
           'btn-default-bg': '#fff',
-          '@btn-default-border': '@primary-color',
+          'btn-default-border': '@primary-color',
         },
         javascriptEnabled: true,
         // includePaths: ["node_modules/"],

@@ -2,8 +2,10 @@
 import '../../components/style';
 import 'docsearch.js/dist/cdn/docsearch.css';
 import './index.less';
-import 'nprogress/nprogress.css';
+
 import '../../espd-css/index.less';
+import 'nprogress/nprogress.css';
+
 import 'docsearch.js/dist/cdn/docsearch.min.js';
 import { createApp, Transition, TransitionGroup, version as vueVersion } from 'vue';
 import i18n from './i18n';
