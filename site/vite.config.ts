@@ -46,11 +46,16 @@ export default {
     preprocessorOptions: {
       less: {
         modifyVars: {
-          hack: `true;@import "${require.resolve('../components/style/color/colorPalette.less')}";`,
+          // hack: `true;@import "${require.resolve('../components/style/color/colorPalette.less')}";`,
           'root-entry-name': 'variable',
           'primary-color': '#ff880f',
-          'primary-color-outline': '#ff880f',
+          'primary-color-active': '#ff880f',
+          'primary-5': '#909399',
+          'height-base': '28px',
+          'height-lg': '32px',
+          'height-sm': '22px',
           'font-size-base': '12px',
+          'item-hover-bg': '#F5F7FA',
         },
         javascriptEnabled: true,
         // includePaths: ["node_modules/"],
