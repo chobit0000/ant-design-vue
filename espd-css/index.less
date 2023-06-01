@@ -1,19 +1,38 @@
 @import './theme.less';
 
-@hover-color: '#303133';
-
+@hover-color: #303133;
+@hover-color-input: #909399;
 .esp-wrapper {
   .ant-input {
     box-shadow: none;
   }
+  .ant-input:hover,
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector:hover {
+    border-color: @hover-color-input;
+  }
+  .ant-input:focus,
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector:focus {
+    border-color: @primary-color;
+  }
+  .ant-checkbox-checked:after {
+    display: none;
+  }
+  .ant-checkbox-indeterminate .ant-checkbox-inner {
+    background-color: @primary-color;
+    border-color: @primary-color;
+  }
+  .ant-checkbox-indeterminate .ant-checkbox-inner::after {
+    background-color: #fff;
+    height: 2px;
+  }
   .ant-checkbox-wrapper {
     margin-right: 20px;
   }
-  .ant-checkbox-inner {
-    height: 14px;
-    width: 14px;
-  }
-  .ant-checkbox-inner::after {
+  // .ant-checkbox-inner {
+  //   height: 14px;
+  //   width: 14px;
+  // }
+  .ant-checkbox-checked .ant-checkbox-inner::after {
     top: 42%;
     left: 17.5%;
     width: 5.4px;

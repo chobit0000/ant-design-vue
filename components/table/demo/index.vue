@@ -33,7 +33,7 @@
 
 <script lang="ts">
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import Ajax from './ajax.vue';
+// import Ajax from './ajax.vue';
 import Basic from './basic.vue';
 import Bordered from './bordered.vue';
 import ColspanRowspan from './colspan-rowspan.vue';
@@ -71,7 +71,7 @@ export default defineComponent({
   components: {
     Basic,
     Ellipsis,
-    Ajax,
+    // Ajax,
     Bordered,
     ColspanRowspan,
     CustomFilterPanel,

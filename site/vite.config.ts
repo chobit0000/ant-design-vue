@@ -50,7 +50,7 @@ export default {
           'root-entry-name': 'variable',
           'primary-color': '#ff880f',
           'base-primary': '#ff880f',
-          'primary-5': '#909399',
+          // 'primary-5': '#909399',
           'height-base': '28px',
           'height-lg': '32px',
           'height-sm': '22px',
