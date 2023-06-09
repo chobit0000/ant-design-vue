@@ -8,6 +8,9 @@ import { additionalData } from './themeConfig';
  * @type {import('vite').UserConfig}
  */
 export default {
+  build: {
+    outDir: '../dist',
+  },
   resolve: {
     alias: {
       vue: 'vue/dist/vue.esm-bundler.js',
