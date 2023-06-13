@@ -1,5 +1,5 @@
 <template>
-  <Header />
+  <!-- <Header /> -->
   <div class="main-wrapper">
     <a-row>
       <template v-if="isMobile">
@@ -12,7 +12,7 @@
           wrapper-class-name="drawer-wrapper"
           width="60%"
         >
-          <surelyVueVue />
+          <!-- <surelyVueVue /> -->
           <Menu :menus="dataSource" :active-menu-item="activeMenuItem" :is-zh-c-n="isZhCN" />
           <template #handle>
             <div class="drawer-handle" @click="handleClickShowButton">
@@ -28,7 +28,7 @@
             <section class="main-menu-inner">
               <!-- <Sponsors :is-c-n="isZhCN" /> -->
               <div>
-                <surelyVueVue />
+                <!-- <surelyVueVue /> -->
               </div>
               <Menu :menus="dataSource" :active-menu-item="activeMenuItem" :is-zh-c-n="isZhCN" />
             </section>
@@ -37,8 +37,8 @@
       </template>
       <a-col :xxxl="20" :xxl="20" :xl="19" :lg="18" :md="18" :sm="24" :xs="24">
         <section :class="mainContainerClass">
-          <WWAdsVue v-if="isZhCN" />
-          <TopAd v-else />
+          <!-- <WWAdsVue v-if="isZhCN" /> -->
+          <!-- <TopAd v-else /> -->
           <Demo v-if="isDemo" :page-data="pageData" :is-zh-c-n="isZhCN">
             <component :is="matchCom" />
           </Demo>
@@ -93,13 +93,13 @@ import Menu from './Menu.vue';
 import PrevAndNext from './PrevAndNext.vue';
 import Demo from './Demo.vue';
 import useMenus from '../hooks/useMenus';
-import TopAd from '../components/rice/top_rice.vue';
+// import TopAd from '../components/rice/top_rice.vue';
 import Sponsors from '../components/rice/sponsors.vue';
-import RightBottomAd from '../components/rice/right_bottom_rice.vue';
+// import RightBottomAd from '../components/rice/right_bottom_rice.vue';
 import { CloseOutlined, MenuOutlined, LinkOutlined } from '@ant-design/icons-vue';
 import ThemeIcon from './ThemeIcon.vue';
-import surelyVueVue from '../components/surelyVue.vue';
-import WWAdsVue from '../components/rice/WWAds.vue';
+// import surelyVueVue from '../components/surelyVue.vue';
+// import WWAdsVue from '../components/rice/WWAds.vue';
 
 const rControl = /[\u0000-\u001f]/g;
 const rSpecial = /[\s~`!@#$%^&*()\-_+=[\]{}|\\;:"'<>,.?/]+/g;
@@ -107,9 +107,9 @@ const rSpecial = /[\s~`!@#$%^&*()\-_+=[\]{}|\\;:"'<>,.?/]+/g;
 export default defineComponent({
   name: 'Layout',
   components: {
-    TopAd,
+    // TopAd,
     Sponsors,
-    RightBottomAd,
+    // RightBottomAd,
     Demo,
     Header,
     Footer,
@@ -118,8 +118,8 @@ export default defineComponent({
     CloseOutlined,
     MenuOutlined,
     ThemeIcon,
-    surelyVueVue,
-    WWAdsVue,
+    // surelyVueVue,
+    // WWAdsVue,
     LinkOutlined,
   },
   setup() {

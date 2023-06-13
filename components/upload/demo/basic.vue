@@ -23,7 +23,7 @@ Classic mode. File selection dialog pops up when upload button is clicked.
     :headers="headers"
     @change="handleChange"
   >
-    <a-button>
+    <a-button type="primary">
       <upload-outlined></upload-outlined>
       Click to Upload
     </a-button>

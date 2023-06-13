@@ -2,7 +2,7 @@
 category: Components
 type: 数据录入
 title: Radio
-subtitle: 单选框
+subtitle: 单选框（完成）
 cover: https://gw.alipayobjects.com/zos/alicdn/8cYb5seNB/Radio.svg
 ---
 

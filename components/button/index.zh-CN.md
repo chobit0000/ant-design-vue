@@ -2,7 +2,7 @@
 category: Components
 type: 通用
 title: Button
-subtitle: 按钮
+subtitle: 按钮（完成）
 cover: https://gw.alipayobjects.com/zos/alicdn/fNUKzY1sk/Button.svg
 ---
 
