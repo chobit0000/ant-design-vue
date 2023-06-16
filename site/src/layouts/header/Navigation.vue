@@ -53,7 +53,6 @@
         style="position: relative"
       >
         {{ $t('app.header.menu.store') }}
-        <!-- <a-badge color="red" style="position: absolute; top: -35px; right: -15px" /> -->
       </a>
     </a-menu-item>
     <!-- <a-menu-item v-if="isZhCN" key="geektime">

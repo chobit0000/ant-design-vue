@@ -17,7 +17,7 @@ Show the dynamic switching mode (between `inline` and `vertical`).
 </docs>
 
 <template>
-  <div>
+  <div style="width: 256px">
     <a-switch :checked="mode === 'vertical'" @change="changeMode" />
     Change Mode
     <span class="ant-divider" style="margin: 0 1em" />
@@ -25,12 +25,17 @@ Show the dynamic switching mode (between `inline` and `vertical`).
     Change Theme
     <br />
     <br />
+    <a-button type="primary" style="margin-bottom: 16px" @click="toggleCollapsed">
+      <MenuUnfoldOutlined v-if="collapsed" />
+      <MenuFoldOutlined v-else />
+    </a-button>
     <a-menu
       v-model:openKeys="openKeys"
       v-model:selectedKeys="selectedKeys"
-      style="width: 256px"
       :mode="mode"
       :theme="theme"
+      :style="`${collapsed ? 'width:58px' : ''}`"
+      :inline-collapsed="collapsed"
     >
       <a-menu-item key="1">
         <template #icon>
@@ -73,6 +78,8 @@ Show the dynamic switching mode (between `inline` and `vertical`).
 <script lang="ts">
 import { defineComponent, reactive, toRefs } from 'vue';
 import {
+  MenuUnfoldOutlined,
+  MenuFoldOutlined,
   MailOutlined,
   CalendarOutlined,
   AppstoreOutlined,
@@ -81,6 +88,8 @@ import {
 import type { MenuMode, MenuTheme } from 'ant-design-vue';
 export default defineComponent({
   components: {
+    MenuUnfoldOutlined,
+    MenuFoldOutlined,
     MailOutlined,
     CalendarOutlined,
     AppstoreOutlined,
@@ -92,6 +101,8 @@ export default defineComponent({
       theme: 'light' as MenuTheme,
       selectedKeys: ['1'],
       openKeys: ['sub1'],
+      collapsed: false,
+      preOpenKeys: ['sub1'],
     });
     const changeMode = (checked: boolean) => {
       state.mode = checked ? 'vertical' : 'inline';
@@ -99,8 +110,13 @@ export default defineComponent({
     const changeTheme = (checked: boolean) => {
       state.theme = checked ? 'dark' : 'light';
     };
+    const toggleCollapsed = () => {
+      state.collapsed = !state.collapsed;
+      state.openKeys = state.collapsed ? [] : state.preOpenKeys;
+    };
     return {
       ...toRefs(state),
+      toggleCollapsed,
       changeMode,
       changeTheme,
     };

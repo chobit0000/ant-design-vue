@@ -93,13 +93,13 @@ import Menu from './Menu.vue';
 import PrevAndNext from './PrevAndNext.vue';
 import Demo from './Demo.vue';
 import useMenus from '../hooks/useMenus';
-import TopAd from '../components/rice/top_rice.vue';
+// import TopAd from '../components/rice/top_rice.vue';
 import Sponsors from '../components/rice/sponsors.vue';
-import RightBottomAd from '../components/rice/right_bottom_rice.vue';
+// import RightBottomAd from '../components/rice/right_bottom_rice.vue';
 import { CloseOutlined, MenuOutlined, LinkOutlined } from '@ant-design/icons-vue';
 import ThemeIcon from './ThemeIcon.vue';
-import surelyVueVue from '../components/surelyVue.vue';
-import WWAdsVue from '../components/rice/WWAds.vue';
+// import surelyVueVue from '../components/surelyVue.vue';
+// import WWAdsVue from '../components/rice/WWAds.vue';
 
 const rControl = /[\u0000-\u001f]/g;
 const rSpecial = /[\s~`!@#$%^&*()\-_+=[\]{}|\\;:"'<>,.?/]+/g;
@@ -107,9 +107,9 @@ const rSpecial = /[\s~`!@#$%^&*()\-_+=[\]{}|\\;:"'<>,.?/]+/g;
 export default defineComponent({
   name: 'Layout',
   components: {
-    TopAd,
+    // TopAd,
     Sponsors,
-    RightBottomAd,
+    // RightBottomAd,
     Demo,
     Header,
     Footer,
@@ -118,8 +118,8 @@ export default defineComponent({
     CloseOutlined,
     MenuOutlined,
     ThemeIcon,
-    surelyVueVue,
-    WWAdsVue,
+    // surelyVueVue,
+    // WWAdsVue,
     LinkOutlined,
   },
   setup() {

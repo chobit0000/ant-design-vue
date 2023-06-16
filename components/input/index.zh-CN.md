@@ -2,7 +2,7 @@
 category: Components
 type: 数据录入
 title: Input
-subtitle: 输入框
+subtitle: 输入框 (完成)
 cover: https://gw.alipayobjects.com/zos/alicdn/xS9YEJhfe/Input.svg
 ---
 

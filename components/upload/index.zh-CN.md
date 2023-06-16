@@ -1,6 +1,6 @@
 ---
 category: Components
-subtitle: 上传
+subtitle: 上传 (完成)
 type: 数据录入
 title: Upload
 cover: https://gw.alipayobjects.com/zos/alicdn/QaeBt_ZMg/Upload.svg

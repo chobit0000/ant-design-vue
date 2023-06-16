@@ -3,7 +3,7 @@ category: Components
 cols: 1
 type: 导航
 title: Menu
-subtitle: 导航菜单
+subtitle: 导航菜单 (完成)
 cover: https://gw.alipayobjects.com/zos/alicdn/3XZcjGpvK/Menu.svg
 ---
 
