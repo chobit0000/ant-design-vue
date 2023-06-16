@@ -56,7 +56,7 @@
         <!-- <a-badge color="red" style="position: absolute; top: -35px; right: -15px" /> -->
       </a>
     </a-menu-item>
-    <a-menu-item v-if="isZhCN" key="geektime">
+    <!-- <a-menu-item v-if="isZhCN" key="geektime">
       <a
         href="https://time.geekbang.org/course/intro/100024601?code=KHKYcoBU6vZa8nMglg7AWfDxxi3BWrz9INAzAY3umPk%3D"
         target="_blank"
@@ -64,9 +64,8 @@
         style="position: relative"
       >
         实战课程
-        <!-- <a-badge color="red" style="position: absolute; top: -35px; right: -15px" /> -->
       </a>
-    </a-menu-item>
+    </a-menu-item> -->
     <template v-if="isMobile">
       <a-menu-item key="switch-lang" @click="$emit('langChange')">
         {{ $t('app.header.lang') }}
