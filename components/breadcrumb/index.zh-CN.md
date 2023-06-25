@@ -1,6 +1,6 @@
 ---
 category: Components
-subtitle: 面包屑
+subtitle: 面包屑（完成）
 type: 导航
 title: Breadcrumb
 cover: https://gw.alipayobjects.com/zos/alicdn/9Ltop8JwH/Breadcrumb.svg
