@@ -1,7 +1,7 @@
 {
-  "name": "ant-design-vue",
+  "name": "esp-design-vue",
   "version": "3.2.20",
-  "title": "Ant Design Vue",
+  "title": "Esp Design Vue",
   "description": "An enterprise-class UI design language and Vue-based implementation",
   "keywords": [
     "vue",
