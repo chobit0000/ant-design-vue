@@ -236,7 +236,8 @@
     "es",
     "scripts",
     "vetur",
-    "typings/global.d.ts"
+    "typings/global.d.ts",
+    "espd-style"
   ],
   "funding": {
     "type": "opencollective",
@@ -315,7 +316,7 @@
   "title": "Esp Design Vue",
   "typings": "lib/index.d.ts",
   "unpkg": "dist/antd.min.js",
-  "version": "3.2.20",
+  "version": "3.2.21",
   "vetur": {
     "attributes": "vetur/attributes.json",
     "tags": "vetur/tags.json"

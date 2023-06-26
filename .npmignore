@@ -27,3 +27,4 @@ tests
 tsconfig.json
 typings
 webpack.build.conf.js
+dist

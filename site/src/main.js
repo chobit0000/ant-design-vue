@@ -3,7 +3,7 @@ import '../../components/style';
 import 'docsearch.js/dist/cdn/docsearch.css';
 import './index.less';
 
-import '../../espd-css/index.less';
+import '../../espd-style/index.less';
 import 'nprogress/nprogress.css';
 
 import 'docsearch.js/dist/cdn/docsearch.min.js';
